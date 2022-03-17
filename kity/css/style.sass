@@ -1,0 +1,266 @@
+body
+    background-color: #F6CDD7
+.kity
+    width: 100%
+    height: 130vh
+    display: flex
+    align-content: center
+    justify-content: center
+    margin: 10% auto
+    position: relative
+    .left-ear,
+    .right-ear
+        width: 100px
+        height: 100px
+        background-color: #FFF
+        position: absolute
+        left: 34%
+        border-radius: 100% 0 51% 49% / 0% 0% 100% 100%
+        border-bottom: 20px solid transparent
+        border-top: 20px solid #FFF
+        border-left: 25px solid #FFF
+        transform: rotate(16deg)
+        .ear-outside
+            border-left: 48px solid #FFF
+            border-right: 40px solid transparent
+            border-top: 24px solid transparent
+            transform: rotate(144deg)
+            position: absolute
+            left: -47px
+            top: 126px
+            &::after
+                position: absolute
+                content: " "
+                border-left: 60px solid #FFF
+                border-right: 45px solid transparent
+                border-top: 49px solid transparent
+                left: -56px
+                top: -67px
+                transform: rotate(-14deg)
+        &::after
+            position: absolute
+            content: " "
+            width: 45px
+            height: 71px
+            background-color: #D4A672
+            border-radius: 53% 47% 51% 49% / 100% 100% 0% 0%
+            top: 16px
+            left: 17px
+            transform: rotate(-45deg)
+
+    .right-ear
+        left: calc( 100% - 43%)
+        transform: rotate(-16deg)
+        .ear-outside
+            left: 26px
+            transform: rotate(0deg)
+        &::after
+            transform: rotate(45deg)
+            left: calc( 100% - 90px )
+
+    .head
+        width: 350px
+        height: 321px
+        background-color: #F5BC60
+        border-radius: 49% 51% 51% 49% / 69% 71% 29% 31%
+        position: relative
+        .top-eye-left,
+        .top-eye-right
+            width: 30px
+            height: 25px
+            background-color: #FFF
+            border-radius: 50%
+            position: absolute
+            top: 100px
+            left: 84px
+        .top-eye-right
+            left: calc( 100% - 122px)
+        .left-check,
+        .right-check
+            width: 100px
+            height: 38px
+            background-color: #FFF
+            position: absolute
+            bottom: 75px
+            left: 0px
+            border-radius: 100% 0% 51% 49% / 0% 0% 100% 100%
+            transform: rotate(100deg)
+            opacity: 0.7
+            filter: drop-shadow(3px -26px 5px #D4A672)
+            .check-inside
+                width: 58px
+                height: 40px
+                background-color: #ff99b8
+                border-radius: 50%
+                transform: rotate(74deg)
+                position: absolute
+                left: 8px
+                top: -10px
+                opacity: 0.8
+        .left-eye,
+        .right-eye
+            width: 45px
+            height: 50px
+            background-color: #634F38
+            border-radius: 49% 51% 51% 49% / 63% 66% 34% 37%
+            transform: rotate(15deg)
+            position: absolute
+            top: 149px
+            left: 72px
+            z-index: 99999
+            &::after
+                position: absolute
+                content: " "
+                width: 10px
+                height: 20px
+                background-color: #634F38
+                transform: rotate(-45deg)
+                left: -6px
+                top: 10px
+                border-radius: 49% 51% 51% 49% / 81% 83% 17% 19%
+            &::before
+                position: absolute
+                content: " "
+                width: 5px
+                height: 5px
+                background-color: #FFF
+                border-radius: 50%
+                left: 16px
+                top: 9px
+                opacity: 0.5
+        .right-eye
+            transform: rotate(-15deg)
+            left: calc( 100% - 122px )
+            &::after
+                transform: rotate(45deg)
+                left: calc( 100% - 5px )
+        .right-check
+            left: calc( 100% - 104px )
+            transform: rotate(-100deg)
+            filter: drop-shadow(3px -26px 5px #D4A672)
+            .check-inside
+                left: 32px
+                transform: rotate(115deg)
+        .nose-mouse
+            width: 169px
+            height: 162px
+            background-color: #FFF
+            position: absolute
+            bottom: 0px
+            left: 89px
+            border-radius: 49% 51% 51% 49% / 67% 71% 29% 33%
+            display: flex
+            align-content: center
+            justify-content: center
+            z-index: 99999
+            .nose
+                width: 31px
+                height: 20px
+                background-color: #634F38
+                position: absolute
+                border-radius: 49% 51% 51% 49% / 100% 100% 0% 0%
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+                transform: rotate(180deg)
+                top: 42px
+            .mouse
+                width: 50px
+                height: 7px
+                background-color: #634F38
+                position: absolute
+                top: 92px
+                border-radius: 100% 0% 51% 49% / 0% 0% 100% 100%
+
+    .neck
+        width: 52px
+        height: 47px
+        z-index: 99999999999999999
+        position: absolute
+        background-color: #f5bc60
+        top: 321px
+        border-radius: 0 0 50% 50%
+        box-shadow: inset 6px 6px 14px #dba54f
+    .kity-body
+        width: 175px
+        position: absolute
+        height: 240px
+        background-color: #e9b158
+        top: 335px
+        border-radius: 78px
+        z-index: 99999
+        .left-hand,
+        .right-hand
+            width: 25px
+            height: 138px
+            background-color: #e9b158
+            border-radius: 30px
+            transform: rotate(63deg)
+            position: absolute
+            top: 3px
+            left: -48px
+            &::after
+                content: " "
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 80%
+                background-color: #FFF
+        .right-hand
+            transform: rotate(-63deg)
+            left: calc( 100% - -24px)
+        .blouse
+            width: 175px
+            position: absolute
+            height: 152px
+            background-color: #1270d7
+            top: 3px
+            border-radius: 43px 43px 50% 50%
+            -webkit-filter: drop-shadow(2px 7px 3px #36516e)
+            filter: drop-shadow(2px 13px 3px #36516e)
+            z-index: 999999
+            .left-n,
+            .right-n
+                border-left: 30px solid #FFF
+                border-right: 30px solid transparent
+                border-top: 30px solid transparent
+                position: absolute
+                left: 58px
+                top: 3px
+                transform: rotate(6deg)
+            .right-n
+                transform: rotate(263deg)
+                left: 71px
+                top: -13px
+        .skirt
+            width: 170px
+            position: absolute
+            height: 144px
+            background-color: #1270d7
+            top: 95px
+            border-radius: 28px 28px 0 0
+            left: 3px
+
+        .left-leg,
+        .right-leg
+            width: 37px
+            height: 49px
+            background-color: #e2af6a
+            position: absolute
+            top: 231px
+            left: 27px
+            border-radius: 0 0 10px 10px
+            transform: rotate(22deg)
+            z-index: -999999999
+            &::after
+                content: " "
+                position: absolute
+                top: 44px
+                left: -1px
+                width: 47px
+                background-color: #6e5431
+                height: 12px
+                border-radius: 2px 20px 20px 2px
+        .right-leg
+            left: 90px
+            transform: rotate(0deg)
+            transform: rotateY(180deg)
